@@ -1,0 +1,629 @@
+@import "_variables.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@mixin contenedores( $display , $jc , $pxLetra , $tipografia , $bg ){
+    display: $display;
+    justify-content: $jc;
+    font-size: $pxLetra;
+    font-family: $tipografia;
+    background-color: $bg;
+}
+
+/*BOOTSTRAP*/
+#ulNavBar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*MAIN INICIO*/
+
+#mainInicio{
+    background-image:url(../img/fondomarmolrosa.png);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 10% 30% 20% 20% ;
+    grid-template-areas: "titulo1 titulo1"
+                         "texto3 img4";
+    row-gap: 10px;   
+    justify-content: center;
+    align-items: center;
+    
+    .tituloInicio{
+        @include contenedores (flex , center , 50px , $tipografia-titulo , #ffe5ec);
+        grid-area: titulo1; 
+    }
+
+    .subtituloInicio{
+        grid-area: texto3;
+        font-size: 45px;
+        font-family: $tipografia-subtitulo;
+
+
+        
+    }
+
+    
+    .textoInicio{
+        grid-area: texto3;
+        font-size: 30px;
+        font-family: 'Work Sans', sans-serif;
+        display: flex;
+        
+    }
+
+
+    .divLogo{
+        grid-area: img4;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/*FOOTER*/
+footer{
+    height: 120px;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #F6A5EB;
+
+        
+   .link{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "facebook facebook"
+                            " instagram instragram";
+    
+    
+
+       .aFooter{
+        text-decoration: none;
+        color: white;
+        font-family: 'Staatliches', cursive;
+        display: flex;
+        flex-direction: row;
+        grid-area: facebook;
+        padding-right: 10px;
+
+            .aFooter:hover{
+                color: blue;
+            }
+       
+            .iredes{
+                position: relative;
+                top: 5px;
+            }
+    
+        }
+        
+        .aFooter:hover{
+            color: rgb(51, 51, 250);
+        }
+       
+       
+        .aFooter1{
+        text-decoration: none;
+        color: white;
+        font-family: 'Staatliches', cursive;
+        display: flex;
+        flex-direction: row;
+        grid-area: instagram;
+        padding-right: 10px;
+        
+            .iredes1{
+                position: relative;
+                top: 5px;
+                height: 20px;
+            }
+    
+        }
+
+        .aFooter1:hover{
+            color: rgb(51, 51, 250);
+        }
+    
+    }
+
+    .logoFooter{
+        height: 115px;
+        width: 115px;
+        position: absolute;
+        left: 10px;
+       }   
+
+}
+
+
+/*MAIN PRODUCTOS*/
+
+#mainProducto{
+    height: 3000px;
+    width: 100%;
+    background-color: rgb(245, 229, 229);
+                          
+    .tituloProducto{
+        grid-area: titulo1;
+        @include contenedores (flex , center , 50px , $tipografia-titulo , #ffe5ec);
+    }
+    
+    #padreGaleria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "foto1 foto2"
+                              "foto3 foto4"
+                              "foto5 foto6"
+                              "foto7 foto8"
+                              "foto9 foto10";
+        justify-content: center;                      
+        align-items: center;
+        gap: 20%;
+        row-gap: 20px;
+        margin-left: 5%;
+        
+    
+    
+    
+        .jean1{
+            grid-area: foto1;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .jean2{
+            grid-area: foto2;
+            @extend .jean1
+        }
+        
+        .jean3{
+            grid-area: foto3;
+            @extend .jean1
+        }
+        
+        .jean4{
+            grid-area: foto4;
+            @extend .jean1
+            
+        }
+        
+        .jean5{
+            grid-area: foto5;
+            @extend .jean1
+        }
+        
+        .jean6{
+            grid-area: foto6;
+            @extend .jean1
+        }
+        
+        .jean7{
+            grid-area: foto7;
+            @extend .jean1
+        }
+
+        .jean8{
+            grid-area: foto8;
+            @extend .jean1
+        }
+
+        .jean9{
+            grid-area: foto9;
+            @extend .jean1
+        }
+
+        .jean10{
+            grid-area: foto10;
+            @extend .jean1
+        }
+    
+    }
+
+}                       
+
+ /*ENVIO*/
+
+#mainEnvio{
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(#f1cad4,rgb(235, 217, 217));
+
+
+    .tituloEnvio{
+        @include contenedores (flex , center , 50px , $tipografia-titulo , #ffe5ec);
+    }
+    
+    #divEnvio{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "envio1 listado2"
+                             " envio1 listado2"
+                             "mapa3 mapa3";
+        justify-content: center;
+    
+    
+        .subtituloEnvio{
+            font-size: 45px;
+            font-family: $tipografia-subtitulo;
+        }
+        
+        
+        .formaEnvio{
+            grid-area: listado2;
+            font-size: 45px;
+            font-family: $tipografia-subtitulo;
+        }
+
+        
+        .explicacionEnvio{
+            grid-area: texto3;
+            font-size: 30px;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+    
+        .listaEnvio{
+            grid-area: envio1;
+            
+        }
+        
+        
+        .subtituloEncuentro{
+            font-size: 45px;
+            font-family: $tipografia-subtitulo;
+        }
+        
+        .listaEncuentro{
+            font-size: 35px;
+            font-family: $tipografia-subtitulo;
+        }
+    
+    
+    
+        .mapa{
+            grid-area: mapa3;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    #parrafoEnvio{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        font-size: 45px;
+        font-family: $tipografia-subtitulo;
+    }
+}
+
+/*COMO COMPRAR*/
+
+#mainCompra{
+    width: 100%;
+    height: 1000px;
+    background-image: url(../img/fondoproductos.jpg);
+
+        
+    .tituloCompra{
+        @include contenedores (flex , center , 50px , $tipografia-titulo , #ffe5ec);
+    }
+
+    #gridCompra{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "encuentra1 encuentra1"
+                             "compra2 compra2"
+                             "compra3 compra3"
+                             "logo1 logo1";                  
+        justify-content:center;
+        
+    
+        .divEncuentra{
+            grid-area: encuentra1;
+
+            .subtituloEncuentra{
+                font-size: 45px;
+                font-family: $tipografia-subtitulo;
+                grid-area: encuentra1;
+            }
+            
+            .explicacionEncuentra{
+                font-size: 30px;
+                font-family: 'Work Sans', sans-serif;
+                grid-area: encuentra1;
+            }
+
+        }
+
+        .divCompra{
+            grid-area: compra2;
+            margin-top: 50px;
+
+            .subtituloCompra{
+                font-size: 45px;
+                font-family: $tipografia-subtitulo;
+                grid-area: compra2;
+            }
+            
+            .explicacionCompra{
+                font-size: 30px;
+                font-family: 'Work Sans', sans-serif;
+                grid-area: compra2;
+                display: flex;
+            }
+        }
+
+        .divAnticipacion{
+            grid-area: compra3;
+            margin-top: 80px;
+            
+            .entregaAnticipacion{
+                font-size: 45px;
+                font-family: $tipografia-subtitulo;
+                grid-area: compra2;
+                display: flex;
+                justify-content: center;
+                background-color: #faafaf;
+            }
+
+        }
+
+        .logoCompra{
+            grid-area: logo1;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+}
+
+/*CONTACTO*/
+#mainContacto{
+    height: 1000px;
+    width: 100%;
+    background-image: linear-gradient(#f1cad4,rgb(235, 217, 217)); 
+
+    .tituloContacto{
+        @include contenedores (flex , center , 50px , $tipografia-titulo , #ffe5ec);
+    }
+
+    #gridContacto{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "fila1 fila2"
+                             "fila3 fila3";
+                             
+        justify-content: center;
+        margin: 0 10px;
+
+        
+    }
+   
+    #divContacto{
+        grid-area:fila1;
+        
+    
+        .subtituloContacto{
+            display: flex;
+            justify-content: center;
+             font-size: 45px;
+             font-family: 'Bebas Neue', cursive
+         }
+    
+        
+         .ulContacto{
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+        
+            .licontacto{
+                padding: 10px;
+            
+            
+                #redescontacto{
+                    color: #b68484;
+                    font-size: 30px;
+                    text-decoration: none;
+                }
+                
+                #redescontacto:hover{
+                    color: #c098ec;
+                }
+            }
+            
+        }
+    }
+
+    .mapaContacto{
+        grid-area: fila3;
+        padding: 50px;
+    }
+       
+
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width:768px){ 
+    #mainInicio{
+        background-image:url(../img/fondomarmolrosa.png);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10% 50% 30% ;
+        grid-template-areas: "titulo1 titulo1"
+                             "texto3 texto3"
+                             "img4 img4";
+        row-gap: 10px;   
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .subtituloInicio{
+        padding: 0;
+        grid-area: texto3;
+        font-size: 45px;
+        font-family: $tipografia-subtitulo;
+        margin-right: 60px;
+       
+    }
+    
+    
+    .textoInicio{
+        grid-area: texto3;
+        font-size: 30px;
+        font-family: 'Work Sans', sans-serif;
+        display: flex; 
+        margin-left: 150px;
+    }
+    
+    .divLogo{
+        display: flex;
+        justify-content: center;
+        grid-area: img4;
+        width: 100%;
+        height: 100%;
+    }
+
+    .subYtexto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+
+    /*MAIN PRODUCTOS*/
+
+    #mainProducto{
+        height: 5800px;
+        width: 100%;
+        background-color:  rgb(245, 229, 229);
+    
+    
+        #padreGaleria{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows:10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+            grid-template-areas: "foto1 foto1"
+                                  "foto2 foto2"
+                                  "foto3 foto3"
+                                  "foto4 foto4"
+                                  "foto5 foto5"
+                                  "foto6 foto6"
+                                  "foto7 foto7"
+                                  "foto8 foto8"
+                                  "foto9 foto9"
+                                  "foto10 foto10";
+            justify-content: center;                      
+            align-items: center;
+            gap: 20%;
+            row-gap: 20px;
+            margin-left: 5%;
+        
+            .jean1{
+                grid-area: foto1;
+                height: 100%;
+                width: 100%;
+            }
+            
+            .jean2{
+                grid-area: foto2;
+                height: 100%;
+                width: 100%;
+            }
+            
+            .jean3{
+                grid-area: foto3;
+                height: 100%;
+                 width: 100%;
+            }
+            
+            .jean4{
+                grid-area: foto4;
+                height: 100%;
+                width: 100%;
+                
+            }
+            
+            .jean5{
+                grid-area: foto5;
+                height: 100%;
+                width: 100%;
+            }
+            
+            .jean6{
+                grid-area: foto6;
+                height: 100%;
+                width: 100%;
+            }
+            
+            .jean7{
+                grid-area: foto7;
+                height: 100%;
+                width: 100%;
+            }
+        
+            .jean8{
+                grid-area: foto8;
+                height: 100%;
+                width: 100%;
+            }
+        
+            .jean9{
+                grid-area: foto9;
+                height: 100%;
+                width: 100%;
+            }
+        
+            .jean10{
+                grid-area: foto10;
+                height: 100%;
+                width: 100%;
+            }
+        
+        }
+    
+    }
+
+    /*ENVIO*/
+
+    #mainEnvio{
+        width: 100%;
+        height: 2000px;
+        background-image: linear-gradient(#f1cad4,rgb(235, 217, 217));
+
+        #divEnvio{
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "envio1 envio1"
+                                 "listado2 listado2"
+                                 "mapa3 mapa3";
+            justify-content: center;
+        }
+    
+    }
+
+    /*COMO COMPRAR*/
+    #mainCompra{
+        width: 100%;
+        height: 1900px;
+        background-image: url(../img/fondoproductos.jpg);
+    }
+}
