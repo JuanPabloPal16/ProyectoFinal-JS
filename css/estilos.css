@@ -114,6 +114,8 @@ footer {
       grid-area: foto1;
       height: 100%;
       width: 100%; }
+    #mainProducto #padreGaleria .jean1:hover, #mainProducto #padreGaleria .jean2:hover, #mainProducto #padreGaleria .jean3:hover, #mainProducto #padreGaleria .jean4:hover, #mainProducto #padreGaleria .jean5:hover, #mainProducto #padreGaleria .jean6:hover, #mainProducto #padreGaleria .jean7:hover, #mainProducto #padreGaleria .jean8:hover, #mainProducto #padreGaleria .jean9:hover, #mainProducto #padreGaleria .jean10:hover {
+      color: rgba(0, 0, 0, 0.842); }
     #mainProducto #padreGaleria .jean2 {
       grid-area: foto2; }
     #mainProducto #padreGaleria .jean3 {

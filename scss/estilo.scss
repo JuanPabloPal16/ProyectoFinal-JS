@@ -171,12 +171,16 @@ footer{
         margin-left: 5%;
         
     
-    
+        
     
         .jean1{
             grid-area: foto1;
             height: 100%;
             width: 100%;
+        }
+        
+        .jean1:hover{
+            color:rgba(0, 0, 0, 0.842)
         }
         
         .jean2{

@@ -1,5 +1,6 @@
 function init(){
 productos();
+api();
 }
 
 
@@ -226,4 +227,13 @@ function productos (){
         localStorage.setItem("ShortTommy", JSON.stringify(shorttommy));
         console.log(localStorage.getItem("ShortTommy"))
     })
+}
+
+
+function api (){
+    const url= "cont1-virtual1.certisend.com/web/container/api/v1"
+
+    fetch (url)
+    .then((resultado)=>resultado.json())
+    .then((json)=>console.log(json.resultado))    
 }
