@@ -17,5 +17,5 @@ function api (){
 
     fetch (url)
     .then((resultado)=>resultado.json())
-    .then((json)=>console.log(json.resultado))    
+    .then((json)=>console.log(json.resultado))
 }
