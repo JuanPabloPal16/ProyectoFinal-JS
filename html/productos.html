@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--PALABRAS CLAVES DE LA PAGINA-->
-   <meta name="keywords" content="jean , jeans las locas , jean las locas, las locas , indumentaria , ropa femenina , laslocas.ind , indumentaria femenina , moda , tendencia , envios, envio , entregas , envios al interior , elastizado , tiro alto , talles especiales , denim">
-   <meta name="description" content="Venta minorista de indumentaria femenina - envio a todo el pais - aceptamos todos los metodos de pago - talles del 34 al 50"> 
+  <!--TOASTIFY-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <!--mi scrip-->
   <script defer src="../js/productos.js"></script>
+  <!--PALABRAS CLAVES DE LA PAGINA-->
+   <meta name="keywords" content="jean , jeans las locas , jean las locas, las locas , indumentaria , ropa femenina , laslocas.ind , indumentaria femenina , moda , tendencia , envios, envio , entregas , envios al interior , elastizado , tiro alto , talles especiales , denim">
+   <meta name="description" content="Venta minorista de indumentaria femenina - envio a todo el pais - aceptamos todos los metodos de pago - talles del 34 al 50"> 
+  <!--mi css-->
    <link rel="stylesheet" href="../css/estilos.css">
   <!--LOGO DE LA PESTAÑA-->
   <link rel="icon" type="image/png" href="../img/logo fondo rosa.png">
@@ -25,7 +29,17 @@
   
 <body onload="init()">
   <header>
+    <!--LOGO DE CARRITO DE COMPRA-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <img src="../img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"></img>
+          </li>
+        </ul>
+      </div>
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="../img/Las Locas logo.png" class="logoNav" width="100px" height="100px" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,35 +71,75 @@
   <main id="mainProducto">
     <h1 class="tituloProducto animate__animated animate__fadeInDown">STOCK DISPONIBLE</h1>
     <div id="padreGaleria">
-      <div class="jean1 animate__animated animate__backInLeft">
-        <img class="jeanJerry" src="../img/jean1.png" alt="JEAN1">
+      <div class="jean1 jeanJerry agregadoCarrito animate__animated animate__backInLeft">
+        <div class="textoJean1">
+          <h3>JEAN JERRY</h3>
+          <p>PRECIO:$1500</p>
+        </div>
+        <img class="jeanJerry precio agregadoCarrito" src="../img/jean1.png" alt="JEAN1">
       </div>
-      <div class="jean2 animate__animated animate__backInRight">
-        <img class="jeanJerry2" src="../img/jean2.png" alt="JEAN2">
+      <div class="jean2 jeanJerry2 agregadoCarrito2 animate__animated animate__backInRight">
+        <img class="jeanJerry2 agregadoCarrito2" src="../img/jean2.png" alt="JEAN2">
+        <div class="textoJean2">
+          <h3>JEAN JERRY</h3>
+          <p>PRECIO:$1500</p>
+        </div>
       </div>
-      <div class="jean3 animate__animated animate__backInLeft">
-        <img class="jeanAnnie" src="../img/jean6(2).png" alt="JEAN3">
+      <div class="jean3 jeanAnnie agregadoCarrito3 animate__animated animate__backInLeft">
+        <img class="jeanAnnie agregadoCarrito3" src="../img/jean6(2).png" alt="JEAN3">
+        <div class="textoJean3">
+          <h3>JEAN ANNIE</h3>
+          <p>PRECIO:$2500</p>
+        </div>
       </div>
-      <div class="jean4 animate__animated animate__backInRight">
-        <img class="jeanItalia" src="../img/jean3.png" alt="JEAN4">
+      <div class="jean4 jeanItalia agregadoCarrito4 animate__animated animate__backInRight">
+        <img class="jeanItalia agregadoCarrito4" src="../img/jean3.png" alt="JEAN4">
+        <div class="textoJean4">
+          <h3>JEAN ITALIA</h3>
+          <p>PRECIO:$2500</p>
+        </div>
       </div>
-      <div class="jean5 animate__animated animate__backInLeft">
-        <img class="JeanMiniBlack" src="../img/jean13.png" alt="JEAN5">
+      <div class="jean5 JeanMiniBlack agregadoCarrito5 animate__animated animate__backInLeft">
+        <img class="JeanMiniBlack agregadoCarrito5" src="../img/jean13.png" alt="JEAN5">
+        <div class="textoJean5">
+          <h3>POLLERA MINI BLACK</h3>
+          <p>PRECIO:$2100</p>
+        </div>
       </div>
-      <div class="jean6 animate__animated animate__backInRight">
-        <img class="JeanMiniBlack2" src="../img/jean14.png" alt="JEAN6">
+      <div class="jean6 JeanMiniBlack2 agregadoCarrito6 animate__animated animate__backInRight">
+        <img class="JeanMiniBlack2 agregadoCarrito6" src="../img/jean14.png" alt="JEAN6">
+        <div class="textoJean6">
+          <h3>POLLERA MINI BLACK</h3>
+          <p>PRECIO:$2100</p>
+        </div>
       </div> 
-      <div class="jean7 animate__animated animate__backInLeft">
-        <img class="JeanMiniBlack3" src="../img/jean12.png" alt="JEAN7">
+      <div class="jean7 JeanMiniBlack3 agregadoCarrito7 animate__animated animate__backInLeft">
+        <img class="JeanMiniBlack3 agregadoCarrito7" src="../img/jean12.png" alt="JEAN7">
+        <div class="textoJean7">
+          <h3>POLLERA MINI BLACK</h3>
+          <p>PRECIO:$2100</p>
+        </div>
       </div>
-      <div class="jean8 animate__animated animate__backInRight">
-        <img class="JeanSummer" src="../img/jean11.png" alt="JEAN8">
+      <div class="jean8 JeanSummer agregadoCarrito8 animate__animated animate__backInRight">
+        <img class="JeanSummer agregadoCarrito8" src="../img/jean11.png" alt="JEAN8">
+        <div class="textoJean8">
+          <h3>SHORT SUMMER</h3>
+          <p>PRECIO:$3200</p>
+        </div>
       </div>
-      <div class="jean9 animate__animated animate__backInLeft">
-        <img class="JeanSummer2" src="../img/jean10.png" alt="JEAN9">
+      <div class="jean9 JeanSummer2 agregadoCarrito9 animate__animated animate__backInLeft">
+        <img class="JeanSummer2 agregadoCarrito9" src="../img/jean10.png" alt="JEAN9">
+        <div class="textoJean9">
+          <h3>SHORT SUMMER</h3>
+          <p>PRECIO:$3200</p>
+        </div>
       </div>
-      <div class="jean10 animate__animated animate__backInRight">
-        <img class="jeanTommy" src="../img/jean7.png" alt="JEAN10">
+      <div class="jean10 jeanTommy agregadoCarrito10 animate__animated animate__backInRight">
+        <img class="jeanTommy agregadoCarrito10" src="../img/jean7.png" alt="JEAN10">
+        <div class="textoJean10">
+          <h3>SHORT TOMMY</h3>
+          <p class="precioJEAN">PRECIO:$1200</p>
+        </div>
       </div>
     </div>   
   </main>

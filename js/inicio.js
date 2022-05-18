@@ -3,6 +3,7 @@ function init(){
    api();
 }
 
+//SWEETALERT QUE SALE AL PRINCIPIO DE LA PAGINA
 function sweetAlert(){
     Swal.fire({
         title:`BIENVENIDO A LAS LOCASS.IND`,
@@ -12,6 +13,7 @@ function sweetAlert(){
     });
 }
 
+//API DE DOLAR AL DIA
 function api (){
     const url= "cont1-virtual1.certisend.com/web/container/api/v1"
 

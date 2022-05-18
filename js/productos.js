@@ -1,9 +1,173 @@
 function init(){
+agregarCarrito();
+agregarCarrito2();
+agregarCarrito3();
+agregarCarrito4();
+agregarCarrito5();
+agregarCarrito6();
+agregarCarrito7();
+agregarCarrito8();
+agregarCarrito9();
+agregarCarrito10();
 productos();
 api();
 }
 
+//MENSAJE DE QUE AGREGASTE PRODUCTOS AL CARRITO (TOASTIFY)
+function agregarCarrito(){
 
+    const jean1 = document.querySelector(".agregadoCarrito");
+    jean1.addEventListener("click", ()=>{
+       Toastify({
+       text: "ESTE PRODUCTO SE AGREGO AL CARRITO 🛍️",
+       duration: 3000,
+       style:{
+        color: "black",
+        background: "#f1cad4",
+        borderRadius: "20px",
+       }
+    }).showToast()});
+    
+}
+
+function agregarCarrito2(){
+    const jean2 = document.querySelector(".agregadoCarrito2");
+    jean2.addEventListener("click", ()=>{
+        Toastify({
+            text: "ESTE PRODUCTO SE AGREGO AL CARRITO 🛍️",
+            duration: 3000,
+            style:{
+             color: "black",
+             background: "#f1cad4",
+             borderRadius: "20px",
+            }
+         }).showToast()});
+
+}
+
+function agregarCarrito3(){
+    const jean3 = document.querySelector(".agregadoCarrito3");
+    jean3.addEventListener("click", ()=>{
+        Toastify({
+            text: "ESTE PRODUCTO SE AGREGO AL CARRITO 🛍️",
+            duration: 3000,
+            style:{
+             color: "black",
+             background: "#f1cad4",
+             borderRadius: "20px",
+            }
+         }).showToast()});
+
+}
+
+function agregarCarrito4(){
+    const jean4 = document.querySelector(".agregadoCarrito4");
+    jean4.addEventListener("click", ()=>{
+        Toastify({
+            text: "ESTE PRODUCTO SE AGREGO AL CARRITO 🛍️",
+            duration: 3000,
+            style:{
+             color: "black",
+             background: "#f1cad4",
+             borderRadius: "20px",
+            }
+         }).showToast()});
+
+}
+
+function agregarCarrito5(){
+    const jean5 = document.querySelector(".agregadoCarrito5");
+    jean5.addEventListener("click", ()=>{
+        Toastify({
+            text: "ESTE PRODUCTO SE AGREGO AL CARRITO 🛍️",
+            duration: 3000,
+            style:{
+             color: "black",
+             background: "#f1cad4",
+             borderRadius: "20px",
+            }
+         }).showToast()});
+
+}
+
+function agregarCarrito6(){
+    const jean6 = document.querySelector(".agregadoCarrito6");
+    jean6.addEventListener("click", ()=>{
+        Toastify({
+            text: "ESTE PRODUCTO SE AGREGO AL CARRITO 🛍️",
+            duration: 3000,
+            style:{
+             color: "black",
+             background: "#f1cad4",
+             borderRadius: "20px",
+            }
+         }).showToast()});
+
+}
+
+function agregarCarrito7(){
+    const jean7 = document.querySelector(".agregadoCarrito7");
+    jean7.addEventListener("click", ()=>{
+        Toastify({
+            text: "ESTE PRODUCTO SE AGREGO AL CARRITO 🛍️",
+            duration: 3000,
+            style:{
+             color: "black",
+             background: "#f1cad4",
+             borderRadius: "20px",
+            }
+         }).showToast()});
+
+}
+
+function agregarCarrito8(){
+    const jean8 = document.querySelector(".agregadoCarrito8");
+    jean8.addEventListener("click", ()=>{
+        Toastify({
+            text: "ESTE PRODUCTO SE AGREGO AL CARRITO 🛍️",
+            duration: 3000,
+            style:{
+             color: "black",
+             background: "#f1cad4",
+             borderRadius: "20px",
+            }
+         }).showToast()});
+
+}
+
+function agregarCarrito9(){
+    const jean9 = document.querySelector(".agregadoCarrito9");
+    jean9.addEventListener("click", ()=>{
+        Toastify({
+            text: "ESTE PRODUCTO SE AGREGO AL CARRITO 🛍️",
+            duration: 3000,
+            style:{
+             color: "black",
+             background: "#f1cad4",
+             borderRadius: "20px",
+            }
+         }).showToast()});
+
+}
+
+function agregarCarrito10(){
+    const jean10 = document.querySelector(".agregadoCarrito10");
+    jean10.addEventListener("click", ()=>{
+        Toastify({
+            text: "ESTE PRODUCTO SE AGREGO AL CARRITO 🛍️",
+            duration: 3000,
+            style:{
+             color: "black",
+             background: "#f1cad4",
+             borderRadius: "20px",
+            }
+         }).showToast()});
+
+}
+
+
+
+//CARRITO: PRODUCTOS QUE SE AGREGAN AL CARRITO Y AL LOCAL STORAGE
 function productos (){
      //JEAN JERRY
     const jeanJerry1 = document.querySelector(".jeanJerry")
@@ -230,6 +394,7 @@ function productos (){
 }
 
 
+//API DE DOLAR AL DIA
 function api (){
     const url= "cont1-virtual1.certisend.com/web/container/api/v1"
 

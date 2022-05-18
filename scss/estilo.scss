@@ -172,61 +172,364 @@ footer{
         
     
         
-    
+        //JEAN 1
         .jean1{
             grid-area: foto1;
-            height: 100%;
-            width: 100%;
+            height: 550px; //dejarlo al 100% en la siguiente modificacion
+            width: 450px;  //dejarlo al 100% en la siguiente modificacion
+            box-shadow: 0px 15px 15px;
+            cursor: pointer;
+        
+            .textoJean1{
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(243, 202, 231, 0.5);
+                transition: all 500ms ease-out;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+            
+               
+            }
+
+            .precio{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease-out;
+            }
+        
+       
+       
         }
         
-        .jean1:hover{
-            color:rgba(0, 0, 0, 0.842)
+        .jean1:hover>.textoJean1{
+            opacity: 1;
+            visibility: visible;
+ 
         }
         
+        //JEAN 2
         .jean2{
             grid-area: foto2;
-            @extend .jean1
-        }
+            @extend .jean1;
+            height: 550px; //dejarlo al 100% en la siguiente modificacion
+            width: 450px;  //dejarlo al 100% en la siguiente modificacion
+            box-shadow: 0px 15px 15px;
+            cursor: pointer;
         
+            .jeanJerry2{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease-out;
+            }
+    
+            .textoJean2{
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(243, 202, 231, 0.5);
+                transition: all 500ms ease-out;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+            }
+        
+        
+        }
+
+        .jean2:hover>.textoJean2{
+            opacity: 1;
+            visibility: visible;
+ 
+        }
+
+        //JEAN 3
         .jean3{
             grid-area: foto3;
-            @extend .jean1
-        }
+            @extend .jean1;
+            height: 550px; //dejarlo al 100% en la siguiente modificacion
+            width: 450px;  //dejarlo al 100% en la siguiente modificacion
+            box-shadow: 0px 15px 15px;
+            cursor: pointer;
         
+            .jeanAnnie{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease-out;
+            }
+    
+            .textoJean3{
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(243, 202, 231, 0.5);
+                transition: all 500ms ease-out;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+            }
+        }
+
+        .jean3:hover>.textoJean3{
+            opacity: 1;
+            visibility: visible;
+ 
+        }
+
+
+        //JEAN 4
         .jean4{
             grid-area: foto4;
-            @extend .jean1
+            @extend .jean1;
+            height: 550px; //dejarlo al 100% en la siguiente modificacion
+            width: 450px;  //dejarlo al 100% en la siguiente modificacion
+            box-shadow: 0px 15px 15px;
+            cursor: pointer;
             
-        }
+            .jeanItalia{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease-out;
+            }
+    
+            .textoJean4{
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(243, 202, 231, 0.5);
+                transition: all 500ms ease-out;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+            }
         
+        }
+
+        .jean4:hover>.textoJean4{
+            opacity: 1;
+            visibility: visible;
+ 
+        }
+
+
+        //JEAN 5
         .jean5{
             grid-area: foto5;
-            @extend .jean1
-        }
+            @extend .jean1;
+            height: 550px; //dejarlo al 100% en la siguiente modificacion
+            width: 450px;  //dejarlo al 100% en la siguiente modificacion
+            box-shadow: 0px 15px 15px;
+            cursor: pointer;
         
+            .JeanMiniBlack{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease-out;
+            }
+    
+            .textoJean5{
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(243, 202, 231, 0.5);
+                transition: all 500ms ease-out;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+            }
+        }
+
+        .jean5:hover>.textoJean5{
+            opacity: 1;
+            visibility: visible;
+ 
+        }
+
+        
+        //JEAN 6
         .jean6{
             grid-area: foto6;
-            @extend .jean1
-        }
+            @extend .jean1;
+            height: 550px; //dejarlo al 100% en la siguiente modificacion
+            width: 450px;  //dejarlo al 100% en la siguiente modificacion
+            box-shadow: 0px 15px 15px;
+            cursor: pointer;
         
+            .JeanMiniBlack2{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease-out;
+            }
+    
+            .textoJean6{
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(243, 202, 231, 0.5);
+                transition: all 500ms ease-out;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+            }
+        }
+
+        .jean6:hover>.textoJean6{
+            opacity: 1;
+            visibility: visible;
+ 
+        }
+
+        
+        //JEAN 7
         .jean7{
             grid-area: foto7;
-            @extend .jean1
+            @extend .jean1;
+            height: 550px; //dejarlo al 100% en la siguiente modificacion
+            width: 450px;  //dejarlo al 100% en la siguiente modificacion
+            box-shadow: 0px 15px 15px;
+            cursor: pointer;
+        
+            .JeanMiniBlack3{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease-out;
+            }
+    
+            .textoJean7{
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(243, 202, 231, 0.5);
+                transition: all 500ms ease-out;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+            }
         }
 
+        .jean7:hover>.textoJean7{
+            opacity: 1;
+            visibility: visible;
+ 
+        }
+
+        
+        //JEAN 8
         .jean8{
             grid-area: foto8;
-            @extend .jean1
+            @extend .jean1;
+            height: 550px; //dejarlo al 100% en la siguiente modificacion
+            width: 450px;  //dejarlo al 100% en la siguiente modificacion
+            box-shadow: 0px 15px 15px;
+            cursor: pointer;
+        
+            .JeanSummer{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease-out;
+            }
+    
+            .textoJean8{
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(243, 202, 231, 0.5);
+                transition: all 500ms ease-out;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+            }
         }
 
+        .jean8:hover>.textoJean8{
+            opacity: 1;
+            visibility: visible;
+ 
+        }
+
+        
+        //JEAN 9
         .jean9{
             grid-area: foto9;
-            @extend .jean1
+            @extend .jean1;
+            height: 550px; //dejarlo al 100% en la siguiente modificacion
+            width: 450px;  //dejarlo al 100% en la siguiente modificacion
+            box-shadow: 0px 15px 15px;
+            cursor: pointer;
+        
+            .JeanSummer2{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease-out;
+            }
+    
+            .textoJean9{
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(243, 202, 231, 0.5);
+                transition: all 500ms ease-out;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+            }
         }
 
+        .jean9:hover>.textoJean9{
+            opacity: 1;
+            visibility: visible;
+ 
+        }
+
+        
+        //JEAN 10
         .jean10{
             grid-area: foto10;
-            @extend .jean1
+            @extend .jean1;
+            height: 550px; //dejarlo al 100% en la siguiente modificacion
+            width: 450px;  //dejarlo al 100% en la siguiente modificacion
+            box-shadow: 0px 15px 15px;
+            cursor: pointer;
+       
+            .jeanTommy{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease-out;
+            }
+    
+            .textoJean10{
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(243, 202, 231, 0.5);
+                transition: all 500ms ease-out;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+                
+                .precioJEAN{
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+
+        
+
+        .jean10:hover>.textoJean10{
+            opacity: 1;
+            visibility: visible;
+ 
         }
     
     }

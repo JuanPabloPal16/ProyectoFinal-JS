@@ -112,28 +112,236 @@ footer {
     margin-left: 5%; }
     #mainProducto #padreGaleria .jean1, #mainProducto #padreGaleria .jean2, #mainProducto #padreGaleria .jean3, #mainProducto #padreGaleria .jean4, #mainProducto #padreGaleria .jean5, #mainProducto #padreGaleria .jean6, #mainProducto #padreGaleria .jean7, #mainProducto #padreGaleria .jean8, #mainProducto #padreGaleria .jean9, #mainProducto #padreGaleria .jean10 {
       grid-area: foto1;
-      height: 100%;
-      width: 100%; }
-    #mainProducto #padreGaleria .jean1:hover, #mainProducto #padreGaleria .jean2:hover, #mainProducto #padreGaleria .jean3:hover, #mainProducto #padreGaleria .jean4:hover, #mainProducto #padreGaleria .jean5:hover, #mainProducto #padreGaleria .jean6:hover, #mainProducto #padreGaleria .jean7:hover, #mainProducto #padreGaleria .jean8:hover, #mainProducto #padreGaleria .jean9:hover, #mainProducto #padreGaleria .jean10:hover {
-      color: rgba(0, 0, 0, 0.842); }
+      height: 550px;
+      width: 450px;
+      box-shadow: 0px 15px 15px;
+      cursor: pointer; }
+      #mainProducto #padreGaleria .jean1 .textoJean1, #mainProducto #padreGaleria .jean2 .textoJean1, #mainProducto #padreGaleria .jean3 .textoJean1, #mainProducto #padreGaleria .jean4 .textoJean1, #mainProducto #padreGaleria .jean5 .textoJean1, #mainProducto #padreGaleria .jean6 .textoJean1, #mainProducto #padreGaleria .jean7 .textoJean1, #mainProducto #padreGaleria .jean8 .textoJean1, #mainProducto #padreGaleria .jean9 .textoJean1, #mainProducto #padreGaleria .jean10 .textoJean1 {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(243, 202, 231, 0.5);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+      #mainProducto #padreGaleria .jean1 .precio, #mainProducto #padreGaleria .jean2 .precio, #mainProducto #padreGaleria .jean3 .precio, #mainProducto #padreGaleria .jean4 .precio, #mainProducto #padreGaleria .jean5 .precio, #mainProducto #padreGaleria .jean6 .precio, #mainProducto #padreGaleria .jean7 .precio, #mainProducto #padreGaleria .jean8 .precio, #mainProducto #padreGaleria .jean9 .precio, #mainProducto #padreGaleria .jean10 .precio {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
+    #mainProducto #padreGaleria .jean1:hover > .textoJean1, #mainProducto #padreGaleria .jean2:hover > .textoJean1, #mainProducto #padreGaleria .jean3:hover > .textoJean1, #mainProducto #padreGaleria .jean4:hover > .textoJean1, #mainProducto #padreGaleria .jean5:hover > .textoJean1, #mainProducto #padreGaleria .jean6:hover > .textoJean1, #mainProducto #padreGaleria .jean7:hover > .textoJean1, #mainProducto #padreGaleria .jean8:hover > .textoJean1, #mainProducto #padreGaleria .jean9:hover > .textoJean1, #mainProducto #padreGaleria .jean10:hover > .textoJean1 {
+      opacity: 1;
+      visibility: visible; }
     #mainProducto #padreGaleria .jean2 {
-      grid-area: foto2; }
+      grid-area: foto2;
+      height: 550px;
+      width: 450px;
+      box-shadow: 0px 15px 15px;
+      cursor: pointer; }
+      #mainProducto #padreGaleria .jean2 .jeanJerry2 {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
+      #mainProducto #padreGaleria .jean2 .textoJean2 {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(243, 202, 231, 0.5);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+    #mainProducto #padreGaleria .jean2:hover > .textoJean2 {
+      opacity: 1;
+      visibility: visible; }
     #mainProducto #padreGaleria .jean3 {
-      grid-area: foto3; }
+      grid-area: foto3;
+      height: 550px;
+      width: 450px;
+      box-shadow: 0px 15px 15px;
+      cursor: pointer; }
+      #mainProducto #padreGaleria .jean3 .jeanAnnie {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
+      #mainProducto #padreGaleria .jean3 .textoJean3 {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(243, 202, 231, 0.5);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+    #mainProducto #padreGaleria .jean3:hover > .textoJean3 {
+      opacity: 1;
+      visibility: visible; }
     #mainProducto #padreGaleria .jean4 {
-      grid-area: foto4; }
+      grid-area: foto4;
+      height: 550px;
+      width: 450px;
+      box-shadow: 0px 15px 15px;
+      cursor: pointer; }
+      #mainProducto #padreGaleria .jean4 .jeanItalia {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
+      #mainProducto #padreGaleria .jean4 .textoJean4 {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(243, 202, 231, 0.5);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+    #mainProducto #padreGaleria .jean4:hover > .textoJean4 {
+      opacity: 1;
+      visibility: visible; }
     #mainProducto #padreGaleria .jean5 {
-      grid-area: foto5; }
+      grid-area: foto5;
+      height: 550px;
+      width: 450px;
+      box-shadow: 0px 15px 15px;
+      cursor: pointer; }
+      #mainProducto #padreGaleria .jean5 .JeanMiniBlack {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
+      #mainProducto #padreGaleria .jean5 .textoJean5 {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(243, 202, 231, 0.5);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+    #mainProducto #padreGaleria .jean5:hover > .textoJean5 {
+      opacity: 1;
+      visibility: visible; }
     #mainProducto #padreGaleria .jean6 {
-      grid-area: foto6; }
+      grid-area: foto6;
+      height: 550px;
+      width: 450px;
+      box-shadow: 0px 15px 15px;
+      cursor: pointer; }
+      #mainProducto #padreGaleria .jean6 .JeanMiniBlack2 {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
+      #mainProducto #padreGaleria .jean6 .textoJean6 {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(243, 202, 231, 0.5);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+    #mainProducto #padreGaleria .jean6:hover > .textoJean6 {
+      opacity: 1;
+      visibility: visible; }
     #mainProducto #padreGaleria .jean7 {
-      grid-area: foto7; }
+      grid-area: foto7;
+      height: 550px;
+      width: 450px;
+      box-shadow: 0px 15px 15px;
+      cursor: pointer; }
+      #mainProducto #padreGaleria .jean7 .JeanMiniBlack3 {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
+      #mainProducto #padreGaleria .jean7 .textoJean7 {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(243, 202, 231, 0.5);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+    #mainProducto #padreGaleria .jean7:hover > .textoJean7 {
+      opacity: 1;
+      visibility: visible; }
     #mainProducto #padreGaleria .jean8 {
-      grid-area: foto8; }
+      grid-area: foto8;
+      height: 550px;
+      width: 450px;
+      box-shadow: 0px 15px 15px;
+      cursor: pointer; }
+      #mainProducto #padreGaleria .jean8 .JeanSummer {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
+      #mainProducto #padreGaleria .jean8 .textoJean8 {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(243, 202, 231, 0.5);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+    #mainProducto #padreGaleria .jean8:hover > .textoJean8 {
+      opacity: 1;
+      visibility: visible; }
     #mainProducto #padreGaleria .jean9 {
-      grid-area: foto9; }
+      grid-area: foto9;
+      height: 550px;
+      width: 450px;
+      box-shadow: 0px 15px 15px;
+      cursor: pointer; }
+      #mainProducto #padreGaleria .jean9 .JeanSummer2 {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
+      #mainProducto #padreGaleria .jean9 .textoJean9 {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(243, 202, 231, 0.5);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+    #mainProducto #padreGaleria .jean9:hover > .textoJean9 {
+      opacity: 1;
+      visibility: visible; }
     #mainProducto #padreGaleria .jean10 {
-      grid-area: foto10; }
+      grid-area: foto10;
+      height: 550px;
+      width: 450px;
+      box-shadow: 0px 15px 15px;
+      cursor: pointer; }
+      #mainProducto #padreGaleria .jean10 .jeanTommy {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
+      #mainProducto #padreGaleria .jean10 .textoJean10 {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(243, 202, 231, 0.5);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+        #mainProducto #padreGaleria .jean10 .textoJean10 .precioJEAN {
+          color: black; }
+    #mainProducto #padreGaleria .jean10:hover > .textoJean10 {
+      opacity: 1;
+      visibility: visible; }
 
 /*ENVIO*/
 #mainEnvio {
